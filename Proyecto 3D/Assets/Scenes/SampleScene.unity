@@ -251,7 +251,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.8166, y: -0.526, z: -1.156}
-  m_LocalScale: {x: 4.4124255, y: 1.0084, z: 3.809044}
+  m_LocalScale: {x: 22.461893, y: 1.0084, z: 29.143248}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -435,13 +435,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.99915534, z: -0, w: 0.041092522}
-  m_LocalPosition: {x: 0.91, y: 0.93, z: 0.42}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.31564778, y: -0.63023424, z: 0.3269385, w: -0.6295098}
+  m_LocalPosition: {x: -3.61, y: 6.82, z: -1.15}
+  m_LocalScale: {x: 1.221, y: 1.221, z: 1.221}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -175.29, z: 0}
+  m_LocalEulerAnglesHint: {x: 54.047, y: -270.61902, z: -1.343}
 --- !u!1001 &1741331485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -492,7 +492,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       propertyPath: m_Name
-      value: Paladin J Nordstrom
+      value: Personaje
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       propertyPath: m_Controller
@@ -502,6 +502,14 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8670697777106522171, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670697777106522171, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -509,6 +517,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1752594959}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752594963}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1752594960}
@@ -537,10 +548,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2656123
-  m_Height: 1.8129385
+  m_Radius: 0.12541687
+  m_Height: 1.7561424
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8541404, z: -0.2343877}
+  m_Center: {x: 0, y: 0.82574236, z: 0}
 --- !u!54 &1752594960
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -566,8 +577,21 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1752594963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752594956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b26567152a05de4fb2d1d90d16a49e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velPerso: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
