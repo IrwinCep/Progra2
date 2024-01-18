@@ -497,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: a4dd00a6530869a40b55fe4d4fa4f8dd, type: 2}
+      objectReference: {fileID: 9100000, guid: 8b57443f9649f8d4f8b0fa8d9a153fa1, type: 2}
     - target: {fileID: 5866666021909216657, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -523,6 +523,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1752594960}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1752594966}
   m_SourcePrefab: {fileID: 100100000, guid: bb933f373512c344e8458eef4c8dd838, type: 3}
 --- !u!1 &1752594956 stripped
 GameObject:
@@ -586,12 +589,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752594956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b26567152a05de4fb2d1d90d16a49e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velPerso: 3
+--- !u!114 &1752594966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752594956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd40c43c29413954bbfaf8fa5b8d9e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  veloPerso: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
