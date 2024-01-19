@@ -6,13 +6,13 @@ public class MovmientoPerso : MonoBehaviour
 {
     public float veloPerso;
     private Rigidbody miCuerpo;
-    private Animation miAnimador;
+    private Animator miAnimador;
 
     // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody>();
-        miAnimador = GetComponent<Animation>();
+        miAnimador = GetComponent<Animator>();
         
     }
 
