@@ -1,31 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Threading;
 using UnityEngine;
 
 public class CaminandoSimple : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float veloPerso;
     private Rigidbody miCuerpo;
-    public float velPerso;
-    private Animation miAnimador;
+    private Animator miAnimador;
 
-    Vector3 movimiento;
+    // Start is called before the first frame update
     void Start()
     {
         miCuerpo = GetComponent<Rigidbody>();
-        miAnimador = GetComponent<Animation>();
-    }
-    void Update()
-    {
-        float movHoriz = Input.GetAxisRaw("Vertical");
-        float movVert = Input.GetAxisRaw("Horizontal");
-        movimiento = new Vector3(movHoriz, 0, -movVert);
+        miAnimador = GetComponent<Animator>();
+
     }
 
-    private void FixedUpdate()
+    // Update is called once per frame
+    void Update()
     {
-        miCuerpo.MovePosition(transform.position + (movimiento * velPerso * Time.fixedDeltaTime));
+        float movHoriz = Input.GetAxisRaw("Horizontal");
+        float movVert = Input.GetAxisRaw("Vertical");
+
+        miAnimador.SetFloat("Despl_Lat", movHoriz);
+        miAnimador.SetFloat("Despl_Front", movVert);
+
+        miCuerpo.velocity = ((transform.forward * movVert + transform.right * movHoriz) * veloPerso);
+
     }
 }
