@@ -435,13 +435,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.31564778, y: -0.63023424, z: 0.3269385, w: -0.6295098}
-  m_LocalPosition: {x: -3.42, y: 6.45, z: -1.15}
+  m_LocalRotation: {x: -0.08641888, y: -0.6755211, z: 0.12562005, w: -0.7214033}
+  m_LocalPosition: {x: -3.4, y: 2.33, z: -1.32}
   m_LocalScale: {x: 1.221, y: 1.221, z: 1.221}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 54.047, y: -270.61902, z: -1.343}
+  m_LocalEulerAnglesHint: {x: 17.122, y: -274.345, z: -3.869}
 --- !u!1001 &1741331485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd40c43c29413954bbfaf8fa5b8d9e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  veloPerso: 0
+  veloPerso: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
