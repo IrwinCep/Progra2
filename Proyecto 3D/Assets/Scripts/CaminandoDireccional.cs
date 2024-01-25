@@ -28,8 +28,8 @@ public class CaminandoDireccional : MonoBehaviour
 
         if(direccion.magnitude > 0)
         {
-            Vector3 nuevDir = Vector3.Lerp(transform.forward, direccion, Time.deltaTime * rotSuav);
-            transform.forward = nuevDir;
+            Quaternion nuevRot = Quaternion.LookRotation(direccion);
+            transform.rotation = Quaternion.Lerp(transform.rotation, nuevRot, Time.deltaTime * rotSuav);
             miAnimador.SetBool("Caminando",true);
         }
         else
