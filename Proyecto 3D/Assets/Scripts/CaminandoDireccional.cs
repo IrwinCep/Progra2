@@ -7,6 +7,7 @@ public class CaminandoDireccional : MonoBehaviour
     private Rigidbody miCuerpo;
     private Animator miAnimador;
     public int veloPerso;
+    public int rotSuav;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,8 @@ public class CaminandoDireccional : MonoBehaviour
 
         if(direccion.magnitude > 0)
         {
-            transform.forward = direccion;
+            Vector3 nuevDir = Vector3.Lerp(transform.forward, direccion, Time.deltaTime * rotSuav);
+            transform.forward = nuevDir;
             miAnimador.SetBool("Caminando",true);
         }
         else
