@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class LamparaInteractiva : ObjetoInteractivoGenerico
 {
+ 
+    private bool encender = false;
     public Light laLuz;
+
     public override void ActivarAccion()
     {
-        //Aqui voy a definir como
-        //se prende una lampara
-        if (laLuz.gameObject.activeInHierarchy)
-        {
-            laLuz.gameObject.SetActive(false);
-            textoAccion = "Encender luz";
-        }
-        else
+
+        if (encender == false)
         {
             laLuz.gameObject.SetActive(true);
-            textoAccion = "Apagar Luz";
+            encender = true;
+            textoAccion = "Pausar video";
         }
 
+        else
+        {
+            laLuz.gameObject.SetActive(false);
+            encender = false;
 
-        laLuz.gameObject.SetActive(true);
+            textoAccion = "Grabar video";
+        }
     }
- }
+}

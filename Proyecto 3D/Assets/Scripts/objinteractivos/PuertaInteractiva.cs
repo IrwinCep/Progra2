@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PuertaInteractiva : ObjetoInteractivoGenerico
 {
-    public float rotacioAbierto = 0;
-    public float rotacionCerrado = 0;
+    public float rotacioAbierto = 90;
+    public float rotacionCerrado = -90;
     private bool estaAbierta = false;
 
 
